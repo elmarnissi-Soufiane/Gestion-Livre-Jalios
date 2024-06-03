@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type name="Book" superclass="com.jalios.jcmsplugin.jbook.data.AbstractBook" reviewable="false" debatable="false" unitFieldEdition="true" audienced="false" categoryTab="true" readRightTab="true" updateRightTab="true" templateTab="true" workflowTab="true" advancedTab="true" database="true" hbm="true" authgroups="||" categories="">
+  <title ml="true">
+    <label xml:lang="en">Title</label>
+    <label xml:lang="fr">Titre</label>
+  </title>
+  <fields>
+    <field name="description" editor="wysiwyg" required="false" type="String" searchable="true" ml="true" compactDisplay="false" descriptionType="tooltip" abstract="true" truncate="400" html="false" wysiwygConfigurationId="light" checkHtml="true" rows="4" inline="true">
+      <label xml:lang="en">Description</label>
+      <label xml:lang="fr">Description</label>
+    </field>
+    <field name="image" editor="image" required="false" compactDisplay="false" type="String" searchable="false" size="80" maxlength="500" ml="false" descriptionType="tooltip" dataimage="true" html="false" checkHtml="true" resize="false" resizeWidth="100" resizeHeight="75">
+      <label xml:lang="en">Image</label>
+      <label xml:lang="fr">Image</label>
+    </field>
+    <field name="topics" editor="category" required="false" compactDisplay="false" type="java.util.TreeSet" chooser="keyword" exclusive="false" root="$id.jcmsplugin.jbook.catalog.topic-root" descriptionType="text">
+      <label xml:lang="en">Topics</label>
+      <label xml:lang="fr">Thématiques</label>
+    </field>
+    <field name="isbn" editor="textfield" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="false" html="false" checkHtml="true" descriptionType="tooltip">
+      <label xml:lang="en">ISBN</label>
+      <label xml:lang="fr">ISBN</label>
+    </field>
+  </fields>
+  <label xml:lang="en">Book</label>
+  <label xml:lang="fr">Livre</label>
+</type>
